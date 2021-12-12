@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rest
+  labels:
+    app: rest
+    tier: frontend
+spec:
+  selector:
+    app: rest
+    tier: frontend
+  ports:
+    - port: 80
+      targetPort: 5000
+---
