@@ -13,5 +13,4 @@ kubectl apply -f worker/worker-deployment.yaml
 kubectl apply -f rest/rest-ingress.yaml
 
 kubectl port-forward --address 0.0.0.0 service/rabbitmq 5672:5672 &
-kubectl port-forward --address 0.0.0.0 service/redis 6379:6379 &
 kubectl port-forward --address 0.0.0.0 services/mongo 27017:27017 &
